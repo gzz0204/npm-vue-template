@@ -1,7 +1,11 @@
 {
-  "name": "npm-vue-template",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@ne-web/olympic2021-components",
+  "version": "0.7.0",
+  "private": false,
+  "main": "lib/index/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,6 +13,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "minireset.css": "^0.0.7",
     "vue": "^2.6.11"
   },
   "devDependencies": {

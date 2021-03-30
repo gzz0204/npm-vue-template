@@ -1,0 +1,33 @@
+.DS_Store
+node_modules
+/src
+/public
+/build
+/components
+.browserslistrc
+.env
+.eslintrc.js
+babel.config.js
+vue.config.js
+gulpfile.js
+.prettierrc
+README.hz.md
+README.github.md
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

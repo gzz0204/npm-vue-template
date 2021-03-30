@@ -5534,6 +5534,11 @@ minipass@^3.0.0, minipass@^3.1.1:
   dependencies:
     yallist "^4.0.0"
 
+minireset.css@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npm.taobao.org/minireset.css/download/minireset.css-0.0.7.tgz#7f0750051b14628a4e4df2227547fc9a13a7ea12"
+  integrity sha1-fwdQBRsUYopOTfIidUf8mhOn6hI=
+
 mississippi@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/mississippi/download/mississippi-3.0.0.tgz#ea0a3291f97e0b5e8776b363d5f0a12d94c67022"
