@@ -7,6 +7,7 @@ yarn install
 ```
 ## 一、组件库开发部署
 ### 目录
+```
 |-- components
   -- index.js      // 导出组件库的文件
   |-- CommonFooter  // 单个组件文件夹
@@ -19,7 +20,7 @@ yarn install
 |-- public      // 模板文件，与普通vue项目一致，可以忽略不关注
 |-- lib         // 组件库打包后的文件夹
 
-
+```
 ### 开发组件库流程说明
 1. 修改package.json的name，例如vue-ui-demo。该值为将来发布的组件库名字
 2. 组件库放在components文件夹下，需配置index.js。可参考CommonFooter组件
@@ -64,9 +65,9 @@ npm dist-tag add npm-test@1.0.0 [stable]
 ```
 // 在main.js中全局注册
 
-import olympic2021Components from 'vue-ui-demo'
+import vueUiDemo from 'vue-ui-demo'
 import 'vue-ui-demo/lib/index/style.css'
-Vue.use(olympic2021Components)
+Vue.use(vueUiDemo)
 ```
 
 #### 模板中使用方式：
@@ -137,6 +138,7 @@ export default {
 ```
 ### 参考文章： 
 [【npm】将自己的vue组件发布为npm包](https://www.jianshu.com/p/0fd669635b76)
+
 [Vue Cli 3 搭建一个可按需引入组件的组件库架子](https://blog.csdn.net/weixin_33923762/article/details/91397133?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
