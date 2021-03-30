@@ -21,7 +21,7 @@ yarn install
 
 
 ### 开发组件库流程说明
-1. 修改package.json的name，例如@ne-web/olympic2021-components。该值为将来发布的组件库名字
+1. 修改package.json的name，例如vue-ui-demo。该值为将来发布的组件库名字
 2. 组件库放在components文件夹下，需配置index.js。可参考CommonFooter组件
 3. 组件测试页面 yarn serve
 4. 打包及部署到npm见下面具体说明
@@ -58,14 +58,14 @@ npm dist-tag add npm-test@1.0.0 [stable]
 发包时提示name名错误，name名称不能有大写字母，一般建议小写字母加中横线连接
 
 ## 二、组件库使用
-以组件库：@ne-web/olympic2021-components，其中包含组件 CommonFooter为例
+以组件库：vue-ui-demo，其中包含组件 CommonFooter为例
 
 ### 一、全局引入
 ```
 // 在main.js中全局注册
 
-import olympic2021Components from '@ne-web/olympic2021-components'
-import '@ne-web/olympic2021-components/lib/index/style.css'
+import olympic2021Components from 'vue-ui-demo'
+import 'vue-ui-demo/lib/index/style.css'
 Vue.use(olympic2021Components)
 ```
 
@@ -82,7 +82,7 @@ Vue.use(olympic2021Components)
 
 ### 二、按需部分引入
 可以指定组件库中的某个组件单独引入。避免仅使用部分组件，要引入全部组件库的情况。
-以引入组件库：@ne-web/olympic2021-components中的组件 CommonFooter为例
+以引入组件库：vue-ui-demo中的组件 CommonFooter为例
 
 ##### 配置：使用插件 babel-plugin-component
 ```
@@ -97,7 +97,7 @@ npm i babel-plugin-component -D
     [
       "component",
       {
-        "libraryName": "@ne-web/olympic2021-components", // 组件的名称
+        "libraryName": "vue-ui-demo", // 组件的名称
         "camel2Dash": false,  // 组件路径保持驼峰，不自动转换为-连接
         "style": true   // 如果组件有样式文件，引入组件的单独的css
       }
@@ -118,7 +118,7 @@ npm i babel-plugin-component -D
 #### 1. 直接全局注册：
 ```
 // 在main.js中全局注册
-import {CommonFooter} from '@ne-web/olympic2021-components'
+import {CommonFooter} from 'vue-ui-demo'
 Vue.use(CommonFooter)
 ```
 
@@ -127,7 +127,7 @@ Vue.use(CommonFooter)
 ```
 // 使用组件的.vue文件中局部注册
 <script>
-import {CommonFooter} from '@ne-web/olympic2021-components'
+import {CommonFooter} from 'vue-ui-demo'
 export default {
   components:{
     'common-footer':CommonFooter

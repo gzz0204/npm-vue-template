@@ -1,5 +1,5 @@
 {
-  "name": "@ne-web/olympic2021-components",
+  "name": "vue-ui-demo",
   "version": "0.7.0",
   "private": false,
   "main": "lib/index/index.js",

@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import App from './App.vue';
 
-import olympic2021Components from '@ne-web/olympic2021-components';
-Vue.use(olympic2021Components);
+import vueUiDemo from 'vue-ui-demo';
+Vue.use(vueUiDemo);
 Vue.config.productionTip = false;
 
 new Vue({
